@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 // defines the board size
-#define height 17
-#define width 17
+#define height 10
+#define width 10
 
 // initialize the board
 int board[height][width] = {};
@@ -14,8 +14,9 @@ void print_board(int board[height][width])
     {
         for(int j = 0; j < width; j++)
         {
-            printf("%d", board[i][j]);
+            printf("%d ", board[i][j]);
         }
+        printf("\n");
     }
 }
 
